@@ -17,7 +17,7 @@
   margin: 0;
   padding: 0;
   background-color: var(--white);
-  color: var(--DarkBlue);
+  /* color: var(--oxfordBlue); */
   box-sizing: border-box;
   text-decoration: none;
   line-height: 1.8;
