@@ -9,14 +9,15 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 1rem 1.5rem;
+    box-shadow: 0 10px 20px -5px hsla(0, 0%, 0%, 0.03);
     z-index: 999;
 }
 
 .navbarLogo {
     cursor: pointer;
+    position: relative;
+    top: 8px;
 }
-
-
 
 .navMenu {
     display: flex;
@@ -28,12 +29,14 @@
 }
 
 .navItem {
-    margin-left: 5rem;
+    margin-left: 3rem;
 }
 
 .navItem a {
     display: inline-block;
     padding-bottom: 0.25rem;
+    font-size: 1.6rem;
+    font-weight: bold;
     position: relative;
     transition: none;
 }
@@ -48,12 +51,16 @@
     width: 0;
     height: 3px;
     border-radius: 5px;
-    background-color: var(--red-orange-color-wheel);
+    background-color: var(--orange);
     transition: width 0.25s ease-out
 }
 
 .navItem a:hover::before {
     width: 100%;
+}
+
+.contactBtnMBL {
+    display: none;
 }
 
 .hamburger {
@@ -66,47 +73,59 @@
     height: 3px;
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
-    background-color: var(--red-orange-color-wheel);
+    background-color: var(--orange);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 935px) {
+    .navItem {
+        margin-left: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 815px) {
     .navMenu {
         position: fixed;
-        left: -100%;
-        top: 1px;
+        top: 13rem;
+        right: -100%;
         flex-direction: column;
-        width: 100%;
+        width: 85%;
         text-align: center;
         font-weight: bold;
         box-shadow: 0 10px 30px -5px hsla(0, 0%, 0%, 0.25);
+        padding: 2rem;
         transition: 0.3s;
-        border: 2px solid red;
         border-radius: 8px;
         background-color: transparent;
-        color: blue;
         backdrop-filter: blur(4px);
     }
 
-    .navItem a:hover::before {
-        width: 0;
-    }
-
     .navMenu.active {
-        left: 0;
+        animation: openMenu 0.5s ease forwards;
+        right: 7.5%;
     }
 
-    .navMenu a {
-        background-color: transparent;
-        padding: .5rem 3rem;
-        border: solid 2px var(--accent2);
-        background-color: var(--accent2);
-        color: var(--dark);
-        border-radius: 5px;
-        transition: all .2s ease-in;
-        transition: none;
+    @keyframes openMenu {
+        0% {
+            opacity: 0;
+            transform: scale(0.8);
+        }
+         50% {
+             transform: scale(1.1);
+         }
+
+         100% {
+             opacity: 1;
+             transform: scale(1);
+         }
     }
 
-    .navMenu a:hover {
+    .navItem a {
+        color: var(--oxfordBlue);
+        font-weight: 800;
+        font-size: 2rem;
+    }
+
+    .navItem a:hover {
         background-color: var(--dark);
         color: var(--accent2);
     }
@@ -115,6 +134,14 @@
         margin: 2.5rem 0;
         background-color: transparent;
         transition: none;
+    }
+
+    .contactBtnDT {
+        display: none;
+    }
+
+    .contactBtnMBL {
+        display: block;
     }
 
     .hamburger {

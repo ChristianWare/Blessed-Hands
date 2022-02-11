@@ -1,0 +1,44 @@
+.btn {
+    position: relative;
+    font-size: var(--fs-6);
+    font-weight: 500;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 45px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.buttonText {
+    position: relative;
+    font-weight: 2rem;
+    font-weight: bold;
+    z-index: 5;
+}
+
+
+.btnPrimary {
+    background: var(--orange);
+}
+
+
+.btn .square {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    transition: 0.25s all ease-in-out;
+}
+
+.btn:hover .square {
+    left: -2px;
+    width: 102%;
+    height: 102%;
+}
+
+.btnPrimary .square {
+    background: var(--oxfordBlue);
+}

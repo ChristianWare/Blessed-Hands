@@ -1,9 +1,9 @@
 import styles from "../styles/MainButton.module.css";
 
-function MainButton() {
+function MainButton({ text }) {
   return (
-    <button className={styles.btnPrimary}>
-      <p className={styles.btnText}>Contact</p>
+    <button className={`${styles.btn} ${styles.btnPrimary}`}>
+      <p className={styles.buttonText}>{text}</p>
       <span className={styles.square}></span>
     </button>
   );

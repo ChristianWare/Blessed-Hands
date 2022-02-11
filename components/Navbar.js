@@ -38,22 +38,34 @@ function Navbar() {
           </li>
           <li className={styles.navItem}>
             <Link href='/'>
-              <a onClick={openMenu}>Services</a>
+              <a onClick={openMenu}>My Services</a>
             </Link>
           </li>
           <li className={styles.navItem}>
             <Link href='/'>
-              <a onClick={openMenu}>About</a>
+              <a onClick={openMenu}>About Me</a>
             </Link>
           </li>
           <li className={styles.navItem}>
             <Link href='/'>
-              <a onClick={openMenu}>Contact</a>
+              <a onClick={openMenu}>Testimonials</a>
             </Link>
+          </li>
+          <li className={styles.contactBtnMBL}>
+            <MainButton text='Contact' />
           </li>
         </ul>
-        <MainButton />
-        <span onClick={openMenu} className={ isOpen === false ? styles.hamburger : styles.hamburger + " " + styles.active}>
+        <div className={styles.contactBtnDT}>
+          <MainButton text='Contact' />
+        </div>
+        <span
+          className={
+            isOpen === false
+              ? styles.hamburger
+              : styles.hamburger + " " + styles.active
+          }
+          onClick={openMenu}
+        >
           <span className={styles.bar}></span>
           <span className={styles.bar}></span>
           <span className={styles.bar}></span>
