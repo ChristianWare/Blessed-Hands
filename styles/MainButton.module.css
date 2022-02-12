@@ -11,8 +11,10 @@
 
 .buttonText {
     position: relative;
+    color: white;
     font-weight: 2rem;
     font-weight: bold;
+    white-space: nowrap;
     z-index: 5;
 }
 

@@ -52,11 +52,11 @@ function Navbar() {
             </Link>
           </li>
           <li className={styles.contactBtnMBL}>
-            <MainButton text='Contact' />
+            <MainButton text='Call Me' />
           </li>
         </ul>
         <div className={styles.contactBtnDT}>
-          <MainButton text='Contact' />
+          <MainButton text='Call Me' />
         </div>
         <span
           className={

@@ -8,7 +8,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 1rem 1.5rem;
+    /* padding: 1rem 1.5rem; */
     box-shadow: 0 10px 20px -5px hsla(0, 0%, 0%, 0.03);
     z-index: 999;
 }
@@ -83,7 +83,7 @@
     }
 }
 
-@media screen and (max-width: 815px) {
+@media screen and (max-width: 768px) {
     .navMenu {
         position: fixed;
         top: 14rem;
@@ -96,10 +96,11 @@
         padding: 2rem;
         transition: 0.3s;
         border-radius: 8px;
-        background-color: transparent;
-        backdrop-filter: blur(4px);
+        background-color: white;
+        /* backdrop-filter: blur(50px); */
     }
 
+    
     .navMenu.active {
         animation: openMenu 0.5s ease forwards;
         right: 7.5%;

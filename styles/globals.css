@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
 :root {
@@ -13,14 +13,14 @@
 }
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins',
+  sans-serif;
   margin: 0;
   padding: 0;
-  background-color: var(--white);
-  /* color: var(--oxfordBlue); */
+  color: var(--oxfordBlue);
   box-sizing: border-box;
   text-decoration: none;
-  line-height: 1.8;
+  /* line-height: 1.8; */
   scroll-behavior: smooth;
   overscroll-behavior: none;
   -webkit-tap-highlight-color: transparent;
@@ -28,6 +28,7 @@
 
 html {
   font-size: 62.5%;
+  background-color: var(--lightBlue);
 }
 
 body {
