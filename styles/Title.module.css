@@ -1,0 +1,11 @@
+.sideTitle {
+    background-color: transparent;
+}
+
+.value {
+    font-size: 7rem;
+    text-transform: uppercase;
+    color: transparent;
+      -webkit-text-stroke-width: 1.5px;
+      -webkit-text-stroke-color: var(--orange);
+}
