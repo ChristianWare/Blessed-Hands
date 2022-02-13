@@ -1,11 +1,14 @@
 import styles from "../styles/SecondaryButton.module.css";
+import Link from 'next/link'
 
-function SecondaryButton({ text }) {
+function SecondaryButton({ text, href='' }) {
     return (
-      <button className={`${styles.btn} ${styles.btnPrimary}`}>
-        <p className={styles.buttonText}>{text}</p>
-        <span className={styles.square}></span>
-      </button>
+      <Link href={href}>
+        <a className={`${styles.btn} ${styles.btnPrimary}`}>
+          <p className={styles.buttonText}>{text}</p>
+          <span className={styles.square}></span>
+        </a>
+      </Link>
     );
 }
 

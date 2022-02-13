@@ -25,14 +25,10 @@ function Hero() {
       <div className={styles.heroRight}>
         <div className={styles.ellipseContainer}>
           <div className={`${styles.ellipse} ${styles.thick}`}>
-            <Image
-              src={heroImg}
-              alt='Hero Image'
-              objectFit='contain'
-            />
+            <Image src={heroImg} alt='Hero Image' objectFit='contain' />
           </div>
           <div className={`${styles.ellipse} ${styles.blueCrayola}`}></div>
-          </div>
+        </div>
       </div>
     </div>
   );

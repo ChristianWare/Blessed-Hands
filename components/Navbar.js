@@ -56,7 +56,7 @@ function Navbar() {
           </li>
         </ul>
         <div className={styles.contactBtnDT}>
-          <MainButton text='Call Me' />
+          <MainButton text='623-334-8855' />
         </div>
         <span
           className={

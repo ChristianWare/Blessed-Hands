@@ -11,7 +11,7 @@
 
 .buttonText {
     position: relative;
-    color: white;
+    color: white !important;
     font-weight: 2rem;
     font-weight: bold;
     white-space: nowrap;

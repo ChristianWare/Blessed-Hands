@@ -10,6 +10,7 @@
   --sonicSilver: #787878;
   --blueCrayola: #0d6dfd;
   --lightBlue: #f2f3f7;
+  --lightFontColor: #5b595f;
 }
 
 * {
@@ -107,7 +108,6 @@ button {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--ultrmarine-blue);
 }
-
 
 @media screen and (max-width: 768px) {
   html {

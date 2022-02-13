@@ -1,0 +1,55 @@
+.homeContainer {
+    height: 100vh;
+    margin-top: 10vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.content {
+    margin-top: 3.4rem;
+    /* margin-right: 3rem; */
+    /* width: 80%; */
+}
+
+.content h1 {
+    font-size: 5rem;
+}
+
+.name{
+    color: var(--blueCrayola);
+}
+
+.comapnyName {
+    white-space: nowrap;
+}
+
+.description {
+    color: var(--lightFontColor);
+    line-height: 1.9;
+    text-align: justify;
+    hyphens: auto;
+    margin-top: 3rem;
+    
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 5rem;
+    margin-top: 3rem;
+}
+
+
+.image {
+    min-height: 25rem;
+    min-width: 25rem;
+    padding-left: 8rem;
+}
+
+.test {
+    /* border: 10px solid var(--blueCrayola); */
+    border-radius: 50%;
+    background-color: var(--blueCrayola);
+}

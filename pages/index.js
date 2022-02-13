@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Hero from "../components/Hero";
+import Homearea from "../components/Homearea";
 import Navbar from "../components/Navbar";
 import RotatingImage from "../components/RotatingImage";
 import styles from "../styles/Home.module.css";
@@ -13,8 +14,9 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Navbar />
-      <Hero />
+      {/* <Hero /> */}
       {/* <RotatingImage /> */}
+      <Homearea />
     </div>
   );
 }

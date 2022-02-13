@@ -43,8 +43,8 @@
 }
 
 .ellipseContainer {
-    width: 375px;
-    height: 375px;
+    min-width: 475px;
+    min-height: 475px;
     position: absolute;
     border-radius: 50%;
 }
@@ -115,9 +115,3 @@
         bottom: 10rem;
     }
 }
-
-/* @media screen and (max-width: 800px) {
-    .heroContainer {
-        flex-direction: column;
-    }
-} */
