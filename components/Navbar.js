@@ -33,11 +33,6 @@ function Navbar() {
         >
           <li className={styles.navItem}>
             <Link href='/'>
-              <a onClick={openMenu}>Home</a>
-            </Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link href='/'>
               <a onClick={openMenu}>My Services</a>
             </Link>
           </li>
@@ -49,6 +44,11 @@ function Navbar() {
           <li className={styles.navItem}>
             <Link href='/'>
               <a onClick={openMenu}>Testimonials</a>
+            </Link>
+          </li>
+          <li className={styles.navItem}>
+            <Link href='/'>
+              <a onClick={openMenu}>Contact Info</a>
             </Link>
           </li>
           <li className={styles.contactBtnMBL}>
