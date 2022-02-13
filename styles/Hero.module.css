@@ -1,52 +1,123 @@
 .heroContainer {
-    display: flex;
     height: 100vh;
-    
-}
-
-.heroLeft {
-    flex:2;
     display: flex;
-    justify-content: center;
-    padding: 50px 0;
-}
-
-.heroLeftWrapper {
-    height: 50%;
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: center;
+    padding-top: 5rem;
+}
+.heroLeft {
+    flex: 1;
 }
 
-.intro {
-    font-size: 3rem;
+.heroRight {
+    flex: 1;
+}
+
+.introText {
     font-weight: 300;
     color: var(--blue);
+    margin-bottom: 1.5rem;
+    white-space: nowrap;
 }
+    
+.heading {
+    margin-bottom: 2.5rem
 
-.name {
-    line-height: 1.4;
-    padding-bottom: 3rem;
 }
 
 .res {
     white-space: nowrap;
 }
 
-.heroDescription {
+.description {
     width: 80%;
-    padding-bottom: 3rem;
+    margin-bottom: 3.5rem;
+    text-align: justify;
+    word-break: break-all;
 }
 
-.heroRight {
-    flex: 1;
-    padding: 50px 0;
+.btnContainer {
+ display: flex;
+ width: 100%;
+ gap: 4rem;
 }
 
-.imgContainer {
-    border: 10px solid var(--blueCrayola);
+.ellipseContainer {
+    width: 375px;
+    height: 375px;
+    position: absolute;
     border-radius: 50%;
-    width: 450px;
-    height: 450px;
 }
+
+.ellipse {
+    position: absolute;
+    border-radius: 50%;
+    border-style: solid;
+}
+
+.ellipse.thick {
+    width: 93%;
+    height: 93%;
+    border-width: 10px;
+    border-color: transparent;
+    top: 12px;
+    left: 12px;
+}
+
+.ellipse.blueCrayola {
+    width: 93%;
+    height: 93%;
+    border-width: 10px;
+    border-color: var(--blueCrayola) transparent;
+    top: 12px;
+    left: 12px;
+    animation: ellipseRotate 10s ease-in-out infinite;
+}
+
+@keyframes ellipseRotate {
+    0% {
+        transform: rotate(-45deg);
+    }
+
+    100% {
+        transform: rotate(-405deg);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .heroContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+    }
+
+    .heroLeft {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btnContainer {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .heroRight{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ellipseContainer {
+        position: relative;
+        bottom: 10rem;
+    }
+}
+
+/* @media screen and (max-width: 800px) {
+    .heroContainer {
+        flex-direction: column;
+    }
+} */
