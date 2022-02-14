@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Navbar.module.css";
 import MainButton from "./MainButton";
+import logo from "../public/images/bhlogo.svg";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,12 +15,7 @@ function Navbar() {
         <div className={styles.navbarLogo}>
           <Link href='/' passHref>
             <a>
-              <Image
-                src='/images/bhlogo.svg'
-                alt='logo'
-                width={100}
-                height={100}
-              />
+              <Image src={logo} alt='logo' />
             </a>
           </Link>
         </div>

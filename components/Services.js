@@ -3,9 +3,8 @@ import Title from "./Title";
 
 function Services() {
   return (
-    <div>
-      <Title value='My Services' />
-      <h1>What I Offer</h1>
+    <div className={styles.servicesContainer}>
+      <Title value1='My Services' value2='what i specialize in' />
     </div>
   );
 }

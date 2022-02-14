@@ -4,7 +4,6 @@ import WorkImage from "../public/images/img2nobg.png";
 import MainButton from "./MainButton";
 import SecondaryButton from "./SecondaryButton";
 
-
 function Homearea() {
   return (
     <div className={styles.homeContainer}>
@@ -26,8 +25,16 @@ function Homearea() {
             <SecondaryButton href='#contact' text='contact info' />
           </div>
         </div>
-        <div className={styles.image}>
-          <Image src={WorkImage} alt='Work Image' width={375} height={375} className={styles.test} />
+        <div className={styles.imageContainer}>
+          <div className={styles.image}>
+            <Image
+              src={WorkImage}
+              alt='Work Image'
+              width={375}
+              height={375}
+              className={styles.test}
+            />
+          </div>
         </div>
       </div>
     </div>

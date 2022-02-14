@@ -16,6 +16,7 @@
     cursor: pointer;
     position: relative;
     top: 8px;
+    width: 100px;
 }
 
 .navMenu {
@@ -174,4 +175,10 @@
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
         }
+}
+
+@media screen and (max-width: 480px) {
+    .navbarLogo {
+        width: 70px;
+    }
 }
