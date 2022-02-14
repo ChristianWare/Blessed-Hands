@@ -1,7 +1,8 @@
 import Head from "next/head";
-import About from "../components/About";
-import Homearea from "../components/Homearea";
 import Navbar from "../components/Navbar";
+import Homearea from "../components/Homearea";
+import Services from "../components/Services";
+import About from "../components/About";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <Homearea />
+      <Services />
       <About />
     </div>
   );

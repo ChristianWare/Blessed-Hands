@@ -27,7 +27,7 @@ function Homearea() {
           </div>
         </div>
         <div className={styles.image}>
-          <Image src={WorkImage} alt='Work Image' width={400} height={400} className={styles.test} />
+          <Image src={WorkImage} alt='Work Image' width={375} height={375} className={styles.test} />
         </div>
       </div>
     </div>

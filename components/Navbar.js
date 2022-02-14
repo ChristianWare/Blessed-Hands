@@ -43,6 +43,11 @@ function Navbar() {
           </li>
           <li className={styles.navItem}>
             <Link href='/'>
+              <a onClick={openMenu}>Photos</a>
+            </Link>
+          </li>
+          <li className={styles.navItem}>
+            <Link href='/'>
               <a onClick={openMenu}>Testimonials</a>
             </Link>
           </li>
