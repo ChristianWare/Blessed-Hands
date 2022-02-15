@@ -8,12 +8,14 @@
 .value1 {
     font-size: 5rem;
     text-transform: uppercase;
+    text-align: center;
     color: transparent;
       -webkit-text-stroke-width: 1.5px;
       -webkit-text-stroke-color: var(--orange);
 }
 
 .value2 {
-    text-transform: uppercase;
-    font-size: 7rem;
+    text-transform: capitalize;
+    font-size: 4rem;
+    text-align: center;
 }

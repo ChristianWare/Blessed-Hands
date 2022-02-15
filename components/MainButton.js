@@ -4,7 +4,7 @@ import Link from "next/link";
 function MainButton({ text, href = "" }) {
   return (
     <Link href={href}>
-      <a className={`${styles.btn} ${styles.btnPrimary}`}>
+      <a className={styles.btn}>
         <p className={styles.buttonText}>{text}</p>
         <span className={styles.square}></span>
       </a>
