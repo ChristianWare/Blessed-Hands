@@ -12,7 +12,7 @@
     gap: 3rem;
 }
 
-.categories p {
+.categories button {
     border: 1px solid var(--oxfordBlue);
     border-radius: 8px;
     padding: 3rem;
@@ -27,7 +27,7 @@
 }
 
 
-.categories p:hover {
+.categories button:hover {
     background-color: var(--orange);
     color: white;
 }

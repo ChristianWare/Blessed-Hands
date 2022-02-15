@@ -5,7 +5,7 @@ import Title from "./Title";
 function About() {
   return (
     <div className={styles.aboutContainer}>
-            <Title value='About Me' />
+            <Title value1='About Me' value2='My Story' />
     
     </div>
   );

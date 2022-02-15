@@ -28,7 +28,7 @@ function Navbar() {
           }
         >
           <li className={styles.navItem}>
-            <Link href='/'>
+            <Link href='#services'>
               <a onClick={openMenu}>My Services</a>
             </Link>
           </li>
