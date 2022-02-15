@@ -4,7 +4,17 @@ import Title from "./Title";
 function Services() {
   return (
     <div className={styles.servicesContainer}>
-      <Title value1='My Services' value2='from fades to flatops' />
+      <div className={styles.titleContainer}>
+        <Title value1='My Services' value2='All Styles. Any Design' />
+      </div>
+      <div className={styles.categories}>
+        <p>Hair Cuts</p>
+        <p>Beards</p>
+        <p>Shaves</p>
+        <p>Line Ups</p>
+        <p>Children</p>
+        <p>Woman</p>
+      </div>
     </div>
   );
 }
