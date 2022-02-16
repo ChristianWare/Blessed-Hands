@@ -33,7 +33,7 @@ function Navbar() {
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href='/'>
+            <Link href='#about'>
               <a onClick={openMenu}>About Me</a>
             </Link>
           </li>
