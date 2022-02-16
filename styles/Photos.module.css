@@ -1,0 +1,66 @@
+.photoContainer {
+    border: solid 2px var(--orange);
+    border-radius: 8px;
+    margin-bottom: 12rem;
+    /* position: relative; */
+}
+
+.container,
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 300px;
+    gap: 1.2rem;
+    padding: .5rem 2rem;
+}
+
+.titleContainer{
+    margin-bottom: 1rem;
+}
+
+.imageContainerLarge,
+.imageContainerLarge2 {
+    grid-column: span 3;
+    grid-row: span 2;
+    position: relative;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.imageContainerSmall,
+.imageContainerSmall2 {
+    position: relative;
+    cursor: pointer;
+}
+
+.container2 {
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 860px) {
+    .container,
+    .container2 {
+       grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .titleContainer {
+        margin-bottom: 2rem;
+    }
+
+    .imageContainerLarge, 
+    .imageContainerLarge2 {
+        grid-column: span 2;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container,
+    .container2 {
+       grid-template-columns: 1fr; 
+    }
+
+    .imageContainerLarge,
+    .imageContainerLarge2 {
+        grid-column: span 1;
+    }
+}

@@ -15,6 +15,7 @@
     color: white !important;
     font-weight: 2rem;
     font-weight: bold;
+    text-align: center;
     white-space: nowrap;
     z-index: 5;
 }

@@ -35,7 +35,7 @@
 
 .description {
     color: var(--lightFontColor);
-    line-height: 1.9;
+    line-height: 1.7;
     margin-top: 2rem;
     /* text-transform: capitalize; */
     font-size: 1.8rem;
@@ -45,7 +45,6 @@
     /* text-decoration: underline; */
     color: var(--blueCrayola);
     margin-top: 1rem;
-    text-align: center;
 }
 
 .buttonContainer {
@@ -79,6 +78,10 @@
 
     .description {
         width: 80%;
+    }
+
+    .address {
+        text-align: center;
     }
 
     .image {

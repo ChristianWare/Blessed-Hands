@@ -4,6 +4,7 @@ import Homearea from "../components/Homearea";
 import Services from "../components/Services";
 import About from "../components/About";
 import styles from "../styles/Home.module.css";
+import Photos from "../components/Photos";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Homearea />
       <Services />
       <About />
+      <Photos />
     </div>
   );
 }
