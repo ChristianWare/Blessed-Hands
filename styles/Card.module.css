@@ -1,0 +1,33 @@
+.card {
+    /* height: 8rem; */
+    /* width: 15rem; */
+    background-color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.logo {
+    background-color: var(--lightBlue);
+    height:5rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4rem;
+}
+
+.cardTitle {
+    margin-bottom: 1rem;
+    font-size: x-large;
+    color: rgb(18, 18, 18)
+}
+
+.card:hover {
+    box-shadow: var(--orange) 0px 5px 15px 0px;
+}

@@ -1,11 +1,15 @@
-import styles from '../styles/Card.module.css'
+import styles from "../styles/Card.module.css";
 
-function Card() {
-    return (
-        <div>
-            <h1>Card</h1>
-        </div>
-    )
+function Card({ logo, title }) {
+  return (
+    <div className={styles.card}>
+      <div className={styles.logo}>{logo}</div>
+      <div className={styles.cardTitle}>
+        <h4>{title}</h4>
+      </div>
+    </div>
+  );
 }
 
-export default Card
+
+export default Card;

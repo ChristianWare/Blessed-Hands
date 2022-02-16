@@ -1,6 +1,8 @@
 .homeContainer {
     margin-top: 5rem;
     padding-bottom: 5rem;
+    border: solid 2px var(--orange);
+    border-radius: 8px;
 }
 
 .container {
@@ -10,6 +12,7 @@
 
 .content {
     margin-top: 3.4rem;
+    padding-left: 5rem;
 }
 
 .content h1 {
@@ -34,13 +37,15 @@
     color: var(--lightFontColor);
     line-height: 1.9;
     margin-top: 2rem;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
+    font-size: 1.8rem;
 }
 
 .address {
     /* text-decoration: underline; */
     color: var(--blueCrayola);
     margin-top: 1rem;
+    text-align: center;
 }
 
 .buttonContainer {
@@ -61,7 +66,7 @@
     min-width: 25rem;
 }
 
-.test {
+.imgBackground {
     border-radius: 50%;
     background-color: var(--blueCrayola2);
 }
@@ -86,6 +91,7 @@
         align-items: center;
         justify-content: center;
         margin-top: 0rem;
+        padding-left: 0rem;
     }
 
     .content h1 {
@@ -102,13 +108,12 @@
     .comapnyName {
         white-space: normal;
     }
-}
-
-@media screen and (max-width: 490px) {
     .buttonContainer {
         flex-direction: column;
-        width: 100%;
-        gap: 3rem
+        width: 80%;
+        gap: 3rem;
+
+
     }
 }
 
