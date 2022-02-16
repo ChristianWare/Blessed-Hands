@@ -26,12 +26,10 @@
     transition: all 0.2s ease-in;
 }
 
-
 .categories button:hover {
     background-color: var(--orange);
     color: white;
 }
-
 
 @media screen and (max-width: 768px) {
     .categories {

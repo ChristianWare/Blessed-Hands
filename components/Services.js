@@ -1,7 +1,7 @@
 import React, { useState, } from "react";
 import styles from "../styles/Services.module.css";
 import Modal from "./Modal";
-
+ 
 import Title from "./Title";
 
 function Services() {
