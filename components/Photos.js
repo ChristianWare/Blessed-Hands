@@ -25,6 +25,7 @@ function Photos() {
             alt='Hair Cut Exampel 1'
             layout='fill'
             objectFit='cover'
+            className={styles.img}
           />
         </div>
         <div className={styles.imageContainerSmall}>
@@ -33,6 +34,7 @@ function Photos() {
             alt='Hair Cut Exampel 1'
             layout='fill'
             objectFit='cover'
+            className={styles.img}
           />
         </div>
         <div className={styles.imageContainerSmall}>
@@ -41,6 +43,7 @@ function Photos() {
             alt='Hair Cut Exampel 1'
             layout='fill'
             objectFit='cover'
+            className={styles.img}
           />
         </div>
         <div className={styles.imageContainerSmall}>
@@ -49,6 +52,7 @@ function Photos() {
             alt='Hair Cut Exampel 1'
             layout='fill'
             objectFit='cover'
+            className={styles.img}
           />
         </div>
         <div className={styles.imageContainerSmall}>
@@ -57,6 +61,7 @@ function Photos() {
             alt='Hair Cut Exampel 1'
             layout='fill'
             objectFit='cover'
+            className={styles.img}
           />
         </div>
       </div>
@@ -67,6 +72,7 @@ function Photos() {
             alt='Hair Cut Exampel 1'
             layout='fill'
             objectFit='cover'
+            className={styles.img}
           />
         </div>
         <div className={styles.imageContainerSmall2}>
@@ -75,6 +81,7 @@ function Photos() {
             alt='Hair Cut Exampel 1'
             layout='fill'
             objectFit='cover'
+            className={styles.img}
           />
         </div>
         <div className={styles.imageContainerSmall2}>
@@ -83,6 +90,7 @@ function Photos() {
             alt='Hair Cut Exampel 1'
             layout='fill'
             objectFit='cover'
+            className={styles.img}
           />
         </div>
         <div className={styles.imageContainerSmall2}>
@@ -91,6 +99,7 @@ function Photos() {
             alt='Hair Cut Exampel 1'
             layout='fill'
             objectFit='cover'
+            className={styles.img}
           />
         </div>
         <div className={styles.imageContainerSmall2}>
@@ -99,6 +108,7 @@ function Photos() {
             alt='Hair Cut Exampel 1'
             layout='fill'
             objectFit='cover'
+            className={styles.img}
           />
         </div>
       </div>

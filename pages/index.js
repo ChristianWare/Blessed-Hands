@@ -5,6 +5,8 @@ import Services from "../components/Services";
 import About from "../components/About";
 import styles from "../styles/Home.module.css";
 import Photos from "../components/Photos";
+import Testimonials from "../components/Testimonials";
+import data from '../src/data'
 
 export default function Home() {
   return (
@@ -19,6 +21,7 @@ export default function Home() {
       <Services />
       <About />
       <Photos />
+      <Testimonials slides={data} />
     </div>
   );
 }

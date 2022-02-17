@@ -12,7 +12,7 @@
   --blueCrayola: #0d6dfd;
   --blueCrayola2: #b5c9e8;
   --lightBlue: #f2f3f7;
-  --lightFontColor: #5b595f;
+  --lightFontColor: #4f4367;
   --white: rgb(249, 245, 240);
 }
 
@@ -109,11 +109,11 @@ button {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: var(--red-orange-color-wheel);
+  background: var(--orange);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--ultrmarine-blue);
+  background: var(--blueCrayola);
 }
 
 @media screen and (max-width: 768px) {

@@ -1,5 +1,5 @@
 .photoContainer {
-    border: solid 2px var(--orange);
+    /* border: solid 2px var(--orange); */
     border-radius: 8px;
     margin-bottom: 12rem;
     /* position: relative; */
@@ -15,7 +15,7 @@
 }
 
 .titleContainer{
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
 }
 
 .imageContainerLarge,
@@ -24,17 +24,24 @@
     grid-row: span 2;
     position: relative;
     border-radius: 8px;
-    cursor: pointer;
+    border: solid 3px var(--orange);
+    /* cursor: pointer; */
 }
 
 .imageContainerSmall,
 .imageContainerSmall2 {
     position: relative;
-    cursor: pointer;
+    border-radius: 8px;
+    border: solid 3px var(--orange);
+    /* cursor: pointer; */
 }
 
 .container2 {
     margin-bottom: 1rem;
+}
+
+.img {
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 860px) {
