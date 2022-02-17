@@ -2,39 +2,8 @@
     border: solid 2px var(--orange);
     border-radius: 8px;
     margin-bottom: 12rem;
-}
-
-.section {
-    position: relative;
-    height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-}
-
-.image {
-    /* width: 1000px; */
-    height: 550px;
-}
-
-.rightArrow {
-    position: absolute;
-    top: 50%;
-    right: 32px;
-    font-size: 3rem;
-    color: #000;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-}
-
-.leftArrow {
-    position: absolute;
-    top: 50%;
-    left: 32px;
-    font-size: 3rem;
-    color: #000;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
+    justify-content: center;
 }

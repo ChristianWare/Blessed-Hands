@@ -37,14 +37,13 @@
     color: var(--lightFontColor);
     line-height: 1.7;
     margin-top: 2rem;
-    /* text-transform: capitalize; */
     font-size: 1.8rem;
 }
 
 .address {
-    /* text-decoration: underline; */
     color: var(--blueCrayola);
     margin-top: 1rem;
+    font-size: 1.8rem;
 }
 
 .buttonContainer {
@@ -56,8 +55,7 @@
 .imageContainer {
     display: flex;
     align-items: center;
-    justify-content: center;
-        
+    justify-content: center;    
 }
 
 .image {

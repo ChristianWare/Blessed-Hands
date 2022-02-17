@@ -1,43 +1,73 @@
 import React, { useState, useEffect } from "react";
 import styles from "../styles/Testimonials.module.css";
 import Title from "./Title";
+import Image from "next/image";
+import img1 from "../public/images/img2.jpg";
 import data from "../src/data";
-import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
+import { FaQuoteRight } from "react-icons/fa";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
-function Testimonials({ slides }) {
-  const [current, setCurrent] = useState(0);
-  const length = slides.length;
+function Testimonials() {
+  const [people, setPeople] = useState(data);
+  const [index, setIndex] = useState(0);
 
-  const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
-  };
+  useEffect(() => {
+    const lastIndex = people.length - 1;
+    if (index < 0) {
+      setIndex(lastIndex);
+    }
+    if (index > lastIndex) {
+      setIndex(0);
+    }
+  }, [index, people]);
 
-  const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
-  };
-
-  if (!Array.isArray(slides) || slides.length <= 0) {
-    return null;
-  }
+  useEffect(() => {
+    let slider = setInterval(() => {
+      setIndex(index + 1);
+    }, 3000);
+    return () => clearInterval(slider);
+  }, [index]);
 
   return (
     <section className={styles.testContainer}>
-      <Title value1='TESTIMONIALS' value2='What People Say About Me' />
-      <div className={styles.section}>
-        <FaArrowCircleLeft className={styles.leftArrow} onClick={prevSlide} />
-        <FaArrowCircleRight className={styles.rightArrow} onClick={nextSlide} />
-        {data.map((slide, index) => {
-          return (
-            <div
-              className={index === current ? styles.slideActive : styles.slide}
-              key={index}
-            >
-              {index === current && (
-                <img src={slide.image} alt='image' className={styles.image} />
-              )}
-            </div>
-          );
-        })}
+      <Title value1='TESTIMONIALS' value2='What my clients Say About Me' />
+      <div className='section'>
+        <div className='sectionCenter'>
+          {people.map((person, personIndex) => {
+            const { id, image, name, title, quote } = person;
+
+            let position = "nextSlide";
+            if (personIndex === index) {
+              position = "activeSlide";
+            }
+            if (
+              personIndex === index - 1 ||
+              (index === 0 && personIndex === people.length - 1)
+            ) {
+              position = "lastSlide";
+            }
+
+            return (
+              <article key={id} className={position}>
+                <div className='imgbtnContainer'>
+                  <button className='prev' onClick={() => setIndex(index - 1)}>
+                    <FiChevronLeft className='icon' />
+                  </button>
+
+                  <img src={image} alt={name} className='personImage' />
+                  <button className='next' onClick={() => setIndex(index + 1)}>
+                    <FiChevronRight className='icon' />
+                  </button>
+                </div>
+                <h4>{name}</h4>
+                <p className='title'>{title}</p>
+                <p className='text'>{quote}</p>
+                <FaQuoteRight className='icon' />
+              </article>
+            );
+          })}
+          
+        </div>
       </div>
     </section>
   );
