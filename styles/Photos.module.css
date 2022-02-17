@@ -1,6 +1,9 @@
 .photoContainer {
     border-radius: 8px;
     margin-bottom: 12rem;
+    background-color: var(--white2);
+    border-radius: 8px;
+    padding: 2rem 3rem 3rem 3rem;
 }
 
 .container,

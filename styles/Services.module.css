@@ -1,5 +1,8 @@
 .servicesContainer {
-    padding: 12rem 0;
+    margin: 12rem 0;
+    padding: 2rem 3rem 4.5rem 3rem;
+    border-radius: 8px;
+    background-color: var(--white2);
 }
 
 .titleContainer {
