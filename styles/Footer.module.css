@@ -1,17 +1,99 @@
 .footerContainer{
     border-radius: 8px;
-    margin-bottom: 12rem;
-    background-color: var(--white2);
     border-radius: 8px;
     padding: 3rem;
+    padding-bottom: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .btnContainer {
     display: flex;
+    padding-bottom: 2rem;
 }
 
 .top {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    /* border: 4px solid var(--orange); */
+    border-radius: 8px;
+    background-color: var(--white);
+    /* padding: 2rem; */
+    position: relative;
+    top: 100px;
+    width: 90%;
+}
+
+.bottom {
+    background-color: var(--oxfordBlue);
+    padding: 3rem;
+    padding-top: 18rem;
+}
+
+.footerContent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4rem;
+}
+
+.containerOne {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 2;
+}
+
+.conOneDescription {
+   font-size: 1.4rem;
+   color: var(--white2);
+   /* width: 90%; */
+   margin-bottom: 2rem;
+   text-align: justify;
+   word-break: break-all;
+}
+
+.iconContainerDisFlex{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.icon {
+    padding-right: 3rem;
+    color: var(--white2);
+    font-size: 1.4rem;
+}
+
+.title {
+   color: var(--white2); 
+   margin-bottom: 2rem;
+}
+
+.menuItem {
+    color: var(--white2);
+    margin-bottom: .5rem;
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 850px) {
+    .footerContent {
+        grid-template-columns: repeat(3, 1fr);     
+    }
+
+    .containerOne {
+        grid-column: span 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title, .menuItem {
+        text-align: center;
+    }
+
+
 }
