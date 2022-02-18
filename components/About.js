@@ -7,7 +7,7 @@ import { AiOutlineCheckCircle } from "react-icons/ai";
 function About() {
   return (
     <div className={styles.aboutContainer} id='about'>
-      <Title value1='About Me' value2='25 Years in the Game' />
+      <Title value1='About Me' value2='25 Years in the Game.' />
       <div className={styles.container}>
         <div className={styles.imageContainer}>
           <div className={styles.image}>

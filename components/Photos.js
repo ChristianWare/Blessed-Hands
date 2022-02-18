@@ -16,7 +16,7 @@ function Photos() {
   return (
     <div className={styles.photoContainer} id='photos'>
       <div className={styles.titleContainer}>
-        <Title value1='Photos' value2='Some Examples of My Work' />
+        <Title value1='Photos' value2='Picture Perfect. ' />
       </div>
       <div className={styles.container}>
         <div className={styles.imageContainerLarge}>

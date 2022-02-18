@@ -1,0 +1,17 @@
+.footerContainer{
+    border-radius: 8px;
+    margin-bottom: 12rem;
+    background-color: var(--white2);
+    border-radius: 8px;
+    padding: 3rem;
+}
+
+.btnContainer {
+    display: flex;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

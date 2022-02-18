@@ -1,4 +1,4 @@
-import React, { useState, } from "react";
+import React, { useState } from "react";
 import styles from "../styles/Services.module.css";
 import Modal from "./Modal";
  
@@ -15,7 +15,7 @@ function Services() {
   return (
     <div className={styles.servicesContainer} id='services'>
       <div className={styles.titleContainer}>
-        <Title value1='My Services' value2='All Styles. Any Design' />
+        <Title value1='My Services' value2='All Styles. Any Design.' />
       </div>
       <div className={styles.categories}>
         <button onClick={() => setShowModal1(true)}>Hair Cuts</button>

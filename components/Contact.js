@@ -9,7 +9,7 @@ import background from '../public/images/contact.jpeg'
 function Contact() {
   return (
     <div className={styles.contactContainer} id='contact'>
-      <Title value1='contact' value2='Lets get in touch' />
+      <Title value1='contact' value2='Lets get in touch.' />
       <div className={styles.contactContent}>
         <div className={styles.left}>
         <h4>(Seriously)</h4>

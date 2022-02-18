@@ -30,7 +30,7 @@ function Testimonials() {
 
   return (
     <section className={styles.testContainer} id='testimonials'>
-      <Title value1='TESTIMONIALS' value2='What my clients Say About Me' />
+      <Title value1='TESTIMONIALS' value2='What my clients Say About Me.' />
       <div className='section'>
         <div className='sectionCenter'>
           {people.map((person, personIndex) => {
