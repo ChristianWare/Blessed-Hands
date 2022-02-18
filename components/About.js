@@ -33,19 +33,19 @@ function About() {
           <div className={styles.bulletPoints}>
             <div className={styles.indvBullet}>
               <AiOutlineCheckCircle className={styles.checkIcon} />
-              <p>Trained and Certified Master Barber</p>
+              <p>I'm a trained and certified master barber</p>
             </div>
             <div className={styles.indvBullet}>
               <AiOutlineCheckCircle className={styles.checkIcon} />
-              <p>Top Tier Tools</p>
+              <p>I only use top tier tools</p>
             </div>
             <div className={styles.indvBullet}>
               <AiOutlineCheckCircle className={styles.checkIcon} />
-              <p>Build Strong Connections</p>
+              <p>I build strong connections</p>
             </div>
             <div className={styles.indvBullet}>
               <AiOutlineCheckCircle className={styles.checkIcon} />
-              <p>Modernize Classic Looks</p>
+              <p>I can modernize classic looks</p>
             </div>
           </div>
         </div>
