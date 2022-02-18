@@ -50,6 +50,7 @@ function Contact() {
               alt='background'
               layout='fill'
               objectFit='cover'
+              className={styles.picture}
             />
           </div>
         </div>

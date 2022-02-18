@@ -19,10 +19,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    /* border: 4px solid var(--orange); */
     border-radius: 8px;
     background-color: var(--white);
-    /* padding: 2rem; */
     position: relative;
     top: 100px;
     width: 90%;
@@ -49,7 +47,6 @@
 .conOneDescription {
    font-size: 1.4rem;
    color: var(--white2);
-   /* width: 90%; */
    margin-bottom: 2rem;
    text-align: justify;
    word-break: break-all;
@@ -82,7 +79,7 @@
     .footerContent {
         grid-template-columns: repeat(3, 1fr);     
     }
-
+    
     .containerOne {
         grid-column: span 3;
         display: flex;
@@ -94,6 +91,10 @@
     .title, .menuItem {
         text-align: center;
     }
+}
 
-
+@media screen and (max-width: 400px) {
+    .top {
+        width: 100%;
+    }
 }

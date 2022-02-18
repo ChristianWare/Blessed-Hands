@@ -17,9 +17,18 @@
       
 }
 
-
 .value2 {
     text-transform: capitalize;
     font-size: 5rem;
     text-align: center;
+}
+
+@media screen and (max-width:370px) {
+    .value1 {
+        font-size: 4rem;
+    }
+    
+    .value2 {
+        font-size: 1.8rem;
+    }
 }

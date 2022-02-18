@@ -53,7 +53,7 @@ function Navbar() {
             </Link>
           </li>
           <li className={styles.contactBtnMBL}>
-            <MainButton text='Call Me' />
+            <MainButton text='623-334-8855' />
           </li>
         </ul>
         <div className={styles.contactBtnDT}>

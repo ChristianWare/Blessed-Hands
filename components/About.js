@@ -17,36 +17,36 @@ function About() {
               width={375}
               height={375}
               objectFit='cover'
-              layout="responsive"
+              layout='responsive'
               className={styles.imgBackground}
             />
           </div>
         </div>
         <div className={styles.right}>
-          <p className={styles.aboutDescription}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
-            nam quis, tenetur facilis delectus a architecto odio non magni
-            nesciunt dolorum facere error obcaecati quia aliquid eos numquam
-            dolores harum.
+          <p className={styles.aboutDescription} lang='en'>
+            I've worked as a Barber for the past five years. I specializes in
+            straight razor shaves for those who like a more traditional shave. I
+            create a relaxed environment for all my clients and looks forward to
+            making you look and feel your best. Here are some of the things i do
+            best:
           </p>
           <div className={styles.bulletPoints}>
             <div className={styles.indvBullet}>
               <AiOutlineCheckCircle className={styles.checkIcon} />
-              <p>lIne Item Number 1</p>
+              <p>Trained and Certified Master Barber</p>
             </div>
             <div className={styles.indvBullet}>
               <AiOutlineCheckCircle className={styles.checkIcon} />
-              <p>lIne Item Number 2</p>
+              <p>Top Tier Tools</p>
             </div>
             <div className={styles.indvBullet}>
               <AiOutlineCheckCircle className={styles.checkIcon} />
-              <p>lIne Item Number 3</p>
+              <p>Build Strong Connections</p>
             </div>
             <div className={styles.indvBullet}>
               <AiOutlineCheckCircle className={styles.checkIcon} />
-              <p>lIne Item Number 4</p>
+              <p>Modernize Classic Looks</p>
             </div>
-            
           </div>
         </div>
       </div>
