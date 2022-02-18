@@ -4,13 +4,6 @@ import styles from "../styles/Footer.module.css";
 import MainButton from "./MainButton";
 import Title from "./Title";
 import logo from "../public/images/bhlogo.svg";
-import {
-  AiOutlineFacebook,
-  AiOutlineTwitter,
-  AiFillLinkedin,
-} from "react-icons/ai";
-import { BsInstagram } from "react-icons/bs";
-
 
 function Footer() {
   return (
@@ -37,7 +30,6 @@ function Footer() {
               for all my clients and looks forward to making you look and feel
               your best.
             </p>
-            
           </div>
           <div className={styles.containerTwo}>
             <Link href='#services'>
@@ -73,6 +65,9 @@ function Footer() {
             </ul>
           </div>
         </div>
+          <div className={styles.copyRight}>
+            <small>Razor Edge Studio Copy Right 2022</small>
+          </div>
       </div>
     </div>
   );

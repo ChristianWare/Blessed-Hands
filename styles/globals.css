@@ -145,7 +145,7 @@ button {
   /* margin-top: 4rem; */
   width: 80vw;
   height: 600px;
-  max-height: 65vh;
+  /* max-height: 65vh; */
   max-width: 800px;
   text-align: center;
   position: relative;
@@ -262,5 +262,9 @@ article.nextSlide {
   .personImage {
     width: 150px;
     height: 150px;
+  }
+
+  .sectionCenter {
+    height: 440px;
   }
 }
