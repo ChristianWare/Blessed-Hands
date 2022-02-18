@@ -53,11 +53,11 @@ function Navbar() {
             </Link>
           </li>
           <li className={styles.contactBtnMBL}>
-            <MainButton text='623-334-8855' />
+            <MainButton href='tel:623-334-8855' text='623-334-8855' />
           </li>
         </ul>
         <div className={styles.contactBtnDT}>
-          <MainButton text='623-334-8855' />
+          <MainButton href='tel:623-334-8855' text='623-334-8855' />
         </div>
         <span
           className={

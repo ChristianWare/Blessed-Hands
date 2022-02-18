@@ -44,7 +44,7 @@
 .phoneContainer {
     display: flex;
     align-items: center;
-    margin-bottom: 4rem; 
+    margin-bottom: 3rem; 
 }
 
 .emailContainer {
@@ -93,6 +93,16 @@
 @media screen and (max-width: 850px) {
     .contactContent {
         grid-template-columns: 1fr;
+    }
+
+    .left {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .picture {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 8px;
     }
     
     .left h4, .left h2 {

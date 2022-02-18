@@ -16,7 +16,7 @@
     cursor: pointer;
     position: relative;
     top: 8px;
-    width: 100px;
+    width: 80px;
 }
 
 .navMenu {
@@ -149,6 +149,7 @@
 
     .contactBtnMBL {
         display: block;
+        margin-top: 1rem;
     }
 
     .hamburger {

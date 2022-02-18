@@ -44,12 +44,19 @@
     grid-column: span 2;
 }
 
+.logoContainer {
+    cursor: pointer;
+    width: 80px;
+    margin-bottom: 2rem;
+    border: 2px solid red
+}
+
 .conOneDescription {
    font-size: 1.4rem;
    color: var(--white2);
    margin-bottom: 2rem;
    text-align: justify;
-   word-break: break-all;
+   hyphens: auto;
 }
 
 .iconContainerDisFlex{
@@ -58,15 +65,17 @@
     justify-content: flex-start;
 }
 
-.icon {
-    padding-right: 3rem;
-    color: var(--white2);
-    font-size: 1.4rem;
-}
 
 .title {
    color: var(--white2); 
-   margin-bottom: 2rem;
+   margin-bottom: 1rem;
+   font-size: 1.7rem;
+   cursor: pointer;
+   transition: all 0.25s ease-in;
+}
+
+.title:hover {
+    color: var(--orange);
 }
 
 .menuItem {
@@ -87,14 +96,16 @@
         align-items: center;
         justify-content: center;
     }
-
-    .title, .menuItem {
-        text-align: center;
-    }
 }
 
 @media screen and (max-width: 400px) {
     .top {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .footerContent {
+        gap: 1rem
     }
 }
