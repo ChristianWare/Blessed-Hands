@@ -5,7 +5,7 @@ const people = [
     name: "Don",
     title: "(15 years as my client)",
     quote:
-      "Fingerstache umami squid, kinfolk subway tile selvage tumblr man braid viral kombucha gentrify fanny pack raclette pok pok mustache.",
+      "I've been knowing O for years, and he's been cutting me for the longest time. he is definitely the best barber in the valley... better yet, the best barber in the world!",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const people = [
     name: "Mac",
     title: "(10 years as my client)",
     quote:
-      "Gastropub sustainable tousled prism occupy. Viral XOXO roof party brunch actually, chambray listicle microdosing put a bird on it paleo subway tile squid umami.",
+      "O started out as my barber, but he is now a close friend of mine. he gives the best advice, and the best haircuts. I will never go to another barber if it's not O.",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const people = [
     name: "John",
     title: "(6 years as my client)",
     quote:
-      "Drinking vinegar polaroid street art echo park, actually semiotics next level butcher master cleanse hammock flexitarian ethical paleo.",
+      "Big Octavious has the best shop in the valley. It feels like a place you can go to have a good laugh, a good cut, and a good time. And he definitely gives the best advice. Certainly a bleessing to know him.",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const people = [
     name: "Chris",
     title: "(8 years as my client)",
     quote:
-      "Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag. ",
+      "Since I moved out here, I have been bringing my boys to O for cuts. He is the only person I trust to cut my boys hair. Best barber in town, hands down.",
   },
 ];
 
