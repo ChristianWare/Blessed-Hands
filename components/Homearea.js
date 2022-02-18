@@ -19,9 +19,9 @@ function Homearea() {
             The only place in the valley to get the sharpest cuts. From fades to
             flat tops, I've got you covered. Open Tuesday - Saturday 9AM - 6PM
           </p>
-          <Link href='https://www.google.com/maps/dir//9100+W+Camelback+Rd,+Phoenix,+AZ+85037/@33.5087972,-112.2572024,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x872b401173e0876d:0xca0dcf3ad984ad85!2m2!1d-112.2550137!2d33.5087972!3e0'>
+          <Link href='https://www.google.com/maps/place/5100+N+99th+Ave,+Phoenix,+AZ+85037/@33.509981,-112.2757085,17z/data=!3m1!4b1!4m5!3m4!1s0x872b4172f9f02973:0x4dc3ba54f817a0fa!8m2!3d33.509981!4d-112.2735198'>
             <a target='_blank' className={styles.address}>
-              Located at 9100 w Camelback Rd, ste 104
+              Located at 5100 w Camelback Rd, ste 104
             </a>
           </Link>
 
