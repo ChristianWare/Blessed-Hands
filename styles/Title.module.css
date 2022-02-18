@@ -12,8 +12,11 @@
     text-align: center;
     color: transparent;
       -webkit-text-stroke-width: 1.5px;
-      -webkit-text-stroke-color: var(--orange);
+      -webkit-text-stroke-color: var(--blueCrayola);
+      word-break: break-all;
+      
 }
+
 
 .value2 {
     text-transform: capitalize;

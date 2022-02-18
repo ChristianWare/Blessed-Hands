@@ -6,6 +6,7 @@ import About from "../components/About";
 import styles from "../styles/Home.module.css";
 import Photos from "../components/Photos";
 import Testimonials from "../components/Testimonials";
+import Contact from "../components/Contact";
 
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
       <About />
       <Photos />
       <Testimonials />
+      <Contact />
     </div>
   );
 }
