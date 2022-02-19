@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Footer.module.css";
 import MainButton from "./MainButton";
 import Title from "./Title";
-import logo from "../public/images/bhlogo.svg";
+import logo from "../public/images/logolight.svg";
 
 function Footer() {
   return (

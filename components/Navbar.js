@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Navbar.module.css";
 import MainButton from "./MainButton";
-import logo from "../public/images/bhlogo.svg";
+import logo from "../public/images/logodark.svg";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
