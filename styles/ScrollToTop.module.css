@@ -1,0 +1,18 @@
+.scrollToTop {
+    background-color: var(--orange);
+    border-radius: 100%;
+    position: fixed;
+    height: 7rem;
+    width: 7rem;
+    bottom: 20px;
+    right: 10px;
+    z-index: 2000;cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    font-size: 5rem;
+    color: var(--white2);
+}
