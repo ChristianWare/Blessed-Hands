@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { IoMdArrowUp } from "react-icons/io";
 import styles from "../styles/ScrollToTop.module.css";
 
@@ -12,10 +12,14 @@ function ScrollToTop() {
       setVisible(false);
     }
   };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisible);
+  });
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0 });
   };
-  window.addEventListener("scroll", toggleVisible);
 
   return (
     <>
