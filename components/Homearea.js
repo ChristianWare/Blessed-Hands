@@ -4,10 +4,18 @@ import styles from "../styles/Homearea.module.css";
 import WorkImage from "../public/images/img2nobg.png";
 import MainButton from "./MainButton";
 import SecondaryButton from "./SecondaryButton";
+import { motion } from "framer-motion";
 
 function Homearea() {
   return (
-    <div className={styles.homeContainer}>
+    <motion.div
+      variants={{
+        hidden: { x: -100, opacity: 0 },
+        show: { x: 1, opacity: 1 },
+      }}
+      transition={{ delay: 0.1, type: "tween" }}
+      className={styles.homeContainer}
+    >
       <div className={styles.container}>
         <div className={styles.content}>
           <h1>
@@ -42,7 +50,7 @@ function Homearea() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
