@@ -100,13 +100,13 @@ button {
   background: var(--accent3);
 } */
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 5px;
-}
+} */
 
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
   background: var(--light-gray);
-}
+} */
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
@@ -157,6 +157,7 @@ button {
 
 .personImage {
   border-radius: 50%;
+  border: 1px solid red;
   margin-bottom: 1rem;
   width: 300px;
   height: 300px;
