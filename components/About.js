@@ -24,16 +24,16 @@ function About() {
         </div>
         <div className={styles.right}>
           <p className={styles.aboutDescription} lang='en'>
-            I've worked as a Barber for the past five years. I specializes in
-            straight razor shaves for those who like a more traditional shave. I
-            create a relaxed environment for all my clients and looks forward to
-            making you look and feel your best. Here are some of the things i do
-            best:
+            I&apos;ve worked as a Barber for the past five years. I specializes
+            in straight razor shaves for those who like a more traditional
+            shave. I create a relaxed environment for all my clients and looks
+            forward to making you look and feel your best. Here are some of the
+            things i do best:
           </p>
           <div className={styles.bulletPoints}>
             <div className={styles.indvBullet}>
               <AiOutlineCheckCircle className={styles.checkIcon} />
-              <p>I'm a trained and certified master barber</p>
+              <p>I&apos;m a trained and certified master barber</p>
             </div>
             <div className={styles.indvBullet}>
               <AiOutlineCheckCircle className={styles.checkIcon} />

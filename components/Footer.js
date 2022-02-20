@@ -26,13 +26,13 @@ function Footer() {
             </div>
             <p className={styles.conOneDescription} lang='en'>
               The only place in the valley to get the sharpest cuts. From fades
-              to flat tops, I've got you covered. I create a relaxed environment
-              for all my clients and looks forward to making you look and feel
-              your best.
+              to flat tops, I&apos;ve got you covered. I create a relaxed
+              environment for all my clients and looks forward to making you
+              look and feel your best.
             </p>
           </div>
           <div className={styles.containerTwo}>
-            <Link href='#services'>
+            <Link passHref href='#services'>
               <h4 className={styles.title}>Services</h4>
             </Link>
             <ul>
@@ -43,7 +43,7 @@ function Footer() {
             </ul>
           </div>
           <div className={styles.containerThree}>
-            <Link href='#about'>
+            <Link passHref href='#about'>
               <h4 className={styles.title}>About</h4>
             </Link>
             <ul>
@@ -54,7 +54,7 @@ function Footer() {
             </ul>
           </div>
           <div className={styles.containerFour}>
-            <Link href='#contact'>
+            <Link passHref href='#contact'>
               <h4 className={styles.title}>Contact</h4>
             </Link>
             <ul>
@@ -65,9 +65,9 @@ function Footer() {
             </ul>
           </div>
         </div>
-          <div className={styles.copyRight}>
-            <small>Razor Edge Studio Copy Right 2022</small>
-          </div>
+        <div className={styles.copyRight}>
+          <small>Razor Edge Studio Copy Right 2022</small>
+        </div>
       </div>
     </div>
   );
