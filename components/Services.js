@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import styles from "../styles/Services.module.css";
 import Modal from "./Modal";
- 
+import { reveal } from "./Animation";
+import { motion } from "framer-motion";
+import { useScroll } from "./useScroll";
+
 import Title from "./Title";
 
 function Services() {
+  const [element, controls] = useScroll();
+
   const [showModal1, setShowModal1] = useState(false);
   const [showModal2, setShowModal2] = useState(false);
   const [showModal3, setShowModal3] = useState(false);
@@ -13,11 +18,11 @@ function Services() {
   const [showModal6, setShowModal6] = useState(false);
 
   return (
-    <div className={styles.servicesContainer} id='services'>
-      <div className={styles.titleContainer}>
+    <div className={styles.servicesContainer} id='services' ref={element}>
+      <motion.div animate={controls} variants={reveal} transition={{ delay: 0.1, stiffness: 300 }} className={styles.titleContainer}>
         <Title value1='My Services' value2='All Styles. Any Design.' />
-      </div>
-      <div className={styles.categories}>
+      </motion.div>
+      <motion.div animate={controls} variants={reveal} transition={{ delay: 0.1, stiffness: 300 }} className={styles.categories}>
         <button onClick={() => setShowModal1(true)}>Hair Cuts</button>
         <button onClick={() => setShowModal2(true)}>Beards</button>
         <button onClick={() => setShowModal3(true)}>Shaves</button>
@@ -60,7 +65,7 @@ function Services() {
           text1='women'
           text2='I have a number of female clients who I have been working with for years. So if you are looking for a trim, come see me.'
         />
-      </div>
+      </motion.div>
     </div>
   );
 }

@@ -3,13 +3,32 @@ import styles from "../styles/About.module.css";
 import Title from "./Title";
 import WorkImage from "../public/images/img7nobg.png";
 import { AiOutlineCheckCircle } from "react-icons/ai";
+import { motion } from "framer-motion";
+import { useScroll } from "./useScroll";
+import {
+  topContainerAnimation,
+  slideLeft,
+  slideRight,
+} from "../components/Animation";
 
 function About() {
+  const [element, controls] = useScroll();
+
   return (
-    <div className={styles.aboutContainer} id='about'>
+    <div className={styles.aboutContainer} id='about' ref={element}>
       <Title value1='About Me' value2='25 Years in the Game.' />
-      <div className={styles.container}>
-        <div className={styles.imageContainer}>
+      <motion.div
+        className={styles.container}
+        variants={topContainerAnimation}
+        animate={controls}
+        transition={{ duration: 1 }}
+      >
+        <motion.div
+          className={styles.imageContainer}
+          variants={slideLeft}
+          animate={controls}
+          transition={{ type: "tween", duration: 0.5 }}
+        >
           <div className={styles.image}>
             <Image
               src={WorkImage}
@@ -21,8 +40,13 @@ function About() {
               className={styles.imgBackground}
             />
           </div>
-        </div>
-        <div className={styles.right}>
+        </motion.div>
+        <motion.div
+          variants={slideRight}
+          animate={controls}
+          transition={{ type: "tween", duration: 0.5 }}
+          className={styles.right}
+        >
           <p className={styles.aboutDescription} lang='en'>
             I&apos;ve worked as a Barber for the past five years. I specializes
             in straight razor shaves for those who like a more traditional
@@ -48,8 +72,8 @@ function About() {
               <p>I can modernize classic looks</p>
             </div>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 }

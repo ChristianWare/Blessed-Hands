@@ -4,13 +4,19 @@ import Image from "next/image";
 import styles from "../styles/Navbar.module.css";
 import MainButton from "./MainButton";
 import logo from "../public/images/logodark.svg";
+import { motion } from "framer-motion";
+import { navbarAnimation } from "../components/Animation";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const openMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className={styles.header}>
+    <motion.header
+      variants={navbarAnimation}
+      transition={{ delay: 0.2 }}
+      className={styles.header}
+    >
       <nav className={styles.navbar}>
         <div className={styles.navbarLogo}>
           <Link href='/' passHref>
@@ -72,7 +78,7 @@ function Navbar() {
           <span className={styles.bar}></span>
         </span>
       </nav>
-    </header>
+    </motion.header>
   );
 }
 

@@ -5,19 +5,21 @@ import WorkImage from "../public/images/img2nobg.png";
 import MainButton from "./MainButton";
 import SecondaryButton from "./SecondaryButton";
 import { motion } from "framer-motion";
+import { headerAnimation, imageAnimation } from "../components/Animation";
+import { useScroll } from "../components/useScroll";
 
 function Homearea() {
+  const [element, controls] = useScroll();
+
   return (
-    <motion.div
-      variants={{
-        hidden: { x: -100, opacity: 0 },
-        show: { x: 1, opacity: 1 },
-      }}
-      transition={{ delay: 0.1, type: "tween" }}
-      className={styles.homeContainer}
-    >
+    <div className={styles.homeContainer} ref={element}>
       <div className={styles.container}>
-        <div className={styles.content}>
+        <motion.div
+          className={styles.content}
+          variants={headerAnimation}
+          animate={controls}
+          transition={{ delay: 0.2, type: "tween" }}
+        >
           <h1>
             <span className={styles.name}>Octavious&apos;</span>{" "}
             <span className={styles.comapnyName}>Razor Edge Studio</span> Barber
@@ -38,9 +40,14 @@ function Homearea() {
             <MainButton href='#services' text='my services' />
             <SecondaryButton href='#contact' text='contact info' />
           </div>
-        </div>
+        </motion.div>
         <div className={styles.imageContainer}>
-          <div className={styles.image}>
+          <motion.div
+            className={styles.image}
+            variants={imageAnimation}
+            animate={controls}
+            transition={{ delay: 0.1, type: "tween" }}
+          >
             <Image
               src={WorkImage}
               alt='Work Image'
@@ -48,10 +55,10 @@ function Homearea() {
               height={375}
               className={styles.imgBackground}
             />
-          </div>
+          </motion.div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 
