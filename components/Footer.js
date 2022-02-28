@@ -4,8 +4,13 @@ import styles from "../styles/Footer.module.css";
 import MainButton from "./MainButton";
 import Title from "./Title";
 import logo from "../public/images/logolight.svg";
+import { motion } from "framer-motion";
+import { useScroll } from "./useScroll";
+import { fromUp, fromDown } from "./Animation";
 
 function Footer() {
+  const [element, controls] = useScroll();
+
   return (
     <div className={styles.footerContainer}>
       <div className={styles.top}>
@@ -14,9 +19,14 @@ function Footer() {
           <MainButton href='tel:623-334-8855' text='623-334-8855' />
         </div>
       </div>
-      <div className={styles.bottom}>
+      <div className={styles.bottom} ref={element}>
         <div className={styles.footerContent}>
-          <div className={styles.containerOne}>
+          <motion.div
+            className={styles.containerOne}
+            variants={fromUp}
+            animate={controls}
+            transition={{ duration: 0.5 }}
+          >
             <div className={styles.logoContainer}>
               <Link href='/' passHref>
                 <a>
@@ -30,8 +40,13 @@ function Footer() {
               environment for all my clients and looks forward to making you
               look and feel your best.
             </p>
-          </div>
-          <div className={styles.containerTwo}>
+          </motion.div>
+          <motion.div
+            variants={fromDown}
+            animate={controls}
+            transition={{ duration: 0.5 }}
+            className={styles.containerTwo}
+          >
             <Link passHref href='#services'>
               <h4 className={styles.title}>Services</h4>
             </Link>
@@ -41,8 +56,14 @@ function Footer() {
               <li className={styles.menuItem}>Children</li>
               <li className={styles.menuItem}>Women</li>
             </ul>
-          </div>
-          <div className={styles.containerThree}>
+          </motion.div>
+          <motion.div
+            className={styles.containerOne}
+            variants={fromUp}
+            animate={controls}
+            transition={{ duration: 0.5 }}
+            className={styles.containerThree}
+          >
             <Link passHref href='#about'>
               <h4 className={styles.title}>About</h4>
             </Link>
@@ -52,8 +73,13 @@ function Footer() {
               <li className={styles.menuItem}>Strong Connections</li>
               <li className={styles.menuItem}>Classic Looks</li>
             </ul>
-          </div>
-          <div className={styles.containerFour}>
+          </motion.div>
+          <motion.div
+            variants={fromDown}
+            animate={controls}
+            transition={{ duration: 0.5 }}
+            className={styles.containerFour}
+          >
             <Link passHref href='#contact'>
               <h4 className={styles.title}>Contact</h4>
             </Link>
@@ -63,7 +89,7 @@ function Footer() {
               <li className={styles.menuItem}>octavious@gmail.com</li>
               <li className={styles.menuItem}>item 4</li>
             </ul>
-          </div>
+          </motion.div>
         </div>
         <div className={styles.copyRight}>
           <small>Razor Edge Studio Copy Right 2022</small>

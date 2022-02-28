@@ -24,6 +24,17 @@ export const reveal = {
   show: { x: 0, opacity: 1 },
 };
 
+export const picAniamtion = {
+  hidden: {
+    scale: 0,
+    opacity: 0,
+  },
+  show: {
+    scale: 1,
+    opacity: 1,
+  },
+};
+
 export const topContainerAnimation = {
   hidden: {
     opacity: 0,
@@ -39,18 +50,28 @@ export const slideLeft = {
     opacity: 0,
   },
   show: {
-      x: 0, 
-      opacity: 1,
-  }
+    x: 0,
+    opacity: 1,
+  },
 };
 
 export const slideRight = {
-    hidden: {
-        x: 100,
-        opacity: 1,
-    },
-    show: {
-      x: 0, 
-      opacity: 1,
-  }
-}
+  hidden: {
+    x: 100,
+    opacity: 1,
+  },
+  show: {
+    x: 0,
+    opacity: 1,
+  },
+};
+
+export const fromUp = {
+  hidden: { y: 100, opacity: 0 },
+  show: { y: 0, opacity: 1 },
+};
+
+export const fromDown = {
+  hidden: { y: -200, opacity: 0 },
+  show: { y: 0, opacity: 1 },
+};
