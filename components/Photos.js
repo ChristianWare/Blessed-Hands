@@ -11,14 +11,23 @@ import img7 from "../public/images/img7.jpg";
 import img8 from "../public/images/img8.jpg";
 import img9 from "../public/images/img9.jpg";
 import img10 from "../public/images/img10.jpeg";
+import { motion } from "framer-motion";
+import { useScroll } from "./useScroll";
+import { picAniamtion } from "./Animation";
 
 function Photos() {
+  const [element, controls] = useScroll();
+
   return (
-    <div className={styles.photoContainer} id='photos'>
+    <div className={styles.photoContainer} id='photos' ref={element}>
       <div className={styles.titleContainer}>
         <Title value1='Photos' value2='Picture Perfect. ' />
       </div>
-      <div className={styles.container}>
+      <motion.div
+        variants={picAniamtion}
+        animate={controls}
+        className={styles.container}
+      >
         <div className={styles.imageContainerLarge}>
           <Image
             src={img2}
@@ -64,7 +73,7 @@ function Photos() {
             className={styles.img}
           />
         </div>
-      </div>
+      </motion.div>
       <div className={styles.container2}>
         <div className={styles.imageContainerLarge2}>
           <Image

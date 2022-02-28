@@ -1,6 +1,6 @@
 export const headerAnimation = {
-  hidden: { x: -100, opacity: 0 },
-  show: { x: 1, opacity: 1 },
+  hidden: { opacity: 0 },
+  show: { opacity: 1 },
 };
 
 export const imageAnimation = {
@@ -26,12 +26,11 @@ export const reveal = {
 
 export const picAniamtion = {
   hidden: {
-    scale: 0,
     opacity: 0,
   },
   show: {
-    scale: 1,
     opacity: 1,
+    transition: { duration: 0.6 },
   },
 };
 
